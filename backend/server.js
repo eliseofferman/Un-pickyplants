@@ -28,7 +28,9 @@ const Plant = mongoose.model("Plant", {
 })
 
 app.get("/", (req, res) => {
-  res.send("Hello World!")
+  Plant.find().then(plants => {
+    res.json(plants)
+  })
 })
 
 app.post("/", (req, res) => {
