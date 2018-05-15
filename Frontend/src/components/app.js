@@ -5,6 +5,7 @@ import Recomendation from "./recomendation"
 import PlantsList from "./plants-list"
 import PlantItem from "./plant-item"
 
+
 class App extends React.Component {
 
   render() {
