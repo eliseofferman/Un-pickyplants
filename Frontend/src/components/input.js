@@ -30,6 +30,7 @@ class Input extends React.Component {
     return (
       <div>
         <label>
+
           <h3>Choose sun amount </h3>
           <select onChange={this.handleSunAmount}>
             {sunAmount.map(sunOption => (
@@ -41,7 +42,22 @@ class Input extends React.Component {
               </option>
             ))}
           </select>
+
+          <h3>Choose how often you want to water</h3>
+          <select>
+            {waterAmount.map(waterOption => (
+              <option
+                selected={waterOption === this.props.currentWater}
+                key={waterOption}
+                value={waterOption}>
+                {waterOption}
+              </option>
+            ))}
+          </select>
+
         </label>
+
+
 
         {/* <label onSubmit=>
           <form>
