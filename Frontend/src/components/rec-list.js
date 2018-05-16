@@ -21,7 +21,7 @@ class RecList extends React.Component {
     return (
       <div>
 
-        <h3>Recomented plants</h3>
+        <h3>Recomented plants!</h3>
         {this.state.plantsList.map(planttype => (
           <div>
             <p>{planttype.name}</p>
