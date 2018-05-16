@@ -1,17 +1,20 @@
 import React from "react"
 
+
 const sunAmount = [
+  "",
   "direct sunlight",
   "partly shadow",
   "shadow"
 ]
 
-  const waterAmount = [
-    "once a week",
-    "once a month",
-    "twice a month",
-    "dried out between watering the plant"
-  ]
+const waterAmount = [
+  "",
+  "once a week",
+  "twice a month",
+  "once a month",
+  "dried out between watering the plant"
+]
 
 
 
