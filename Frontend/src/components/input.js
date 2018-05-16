@@ -1,19 +1,19 @@
 import React from "react"
 
-class Input extends React.Component {
+const sunAmount = [
+  "direct sunlight",
+  "partly shadow",
+  "shadow"
+]
 
-  const sunAmount = [
-    "direct sunlight",
-    "partly shadow",
-    "shadow"
+  const waterAmount = [
+    "once a week",
+    "once a month",
+    "twice a month",
+    "dried out between watering the plant"
   ]
 
-    const waterAmount = [
-      "once a week",
-      "once a month",
-      "twice a month",
-      "dried out between watering the plant"
-    ]
+
 
 
 class Input extends React.Component {
