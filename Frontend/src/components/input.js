@@ -3,15 +3,16 @@ import React from "react"
 class Input extends React.Component {
 
   const sunAmount = [
-    "in window",
-    "in wardrobe",
-    "in room"
+    "direct sunlight",
+    "partly shadow",
+    "shadow"
   ]
 
     const waterAmount = [
       "once a week",
       "once a month",
-      "once a year"
+      "twice a month",
+      "dried out between watering the plant"
     ]
 
 
