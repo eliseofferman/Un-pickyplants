@@ -14,10 +14,11 @@ class RecList extends React.Component {
   }
 
   render() {
-     const plants = this.state.plantsList.filter((plant, index) => (
-     plant.sunAmount[index] === this.props.sunOption
-  ))
-console.log("svarX", plants)
+     const plants = this.state.plantsList.filter((plant, index) => {
+       const x = plant.sunAmount.indexOf(this.props.sunOption)
+       return plant.sunAmount[x] === this.props.sunOption
+  })
+
     return (
       <div>
 
