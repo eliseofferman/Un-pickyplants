@@ -9,9 +9,9 @@ import PlantItem from "./plant-item"
 class App extends React.Component {
 
   state = {
-    inputSunx: "",
-    inputWater: "",
-    inputSun: ""
+    // inputSunx: "",
+    // inputWater: "",
+    inputSun: "test"
 
   }
   // updateStateSun = (event) => {
@@ -21,6 +21,9 @@ class App extends React.Component {
   // updateStateWater = (event) => {
   //   this.setState ({ inputWater: event })
   // }
+  updateInputSun = selectedSun => {
+    this.setState({ inputSun: selectedSun })
+  }
 
   render() {
     return (
@@ -30,7 +33,8 @@ class App extends React.Component {
           // callbackStateSun={this.updateStateSun}
           // callbackStateWater={this.updateStateWater}
           // state={this.state}
-        />
+          callbackSunSelector={this.updateInputSun}
+          currentSun={this.state.inputSun} />
         <Recomendation />
         <PlantsList />
         <PlantItem />
