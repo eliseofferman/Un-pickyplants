@@ -13,12 +13,17 @@ class Recomendation extends React.Component {
     })
   }
 
-
   render() {
 
     return (
       <div>
-        Hello Recomendation
+        <h3>Recomented plants</h3>
+        {this.state.plantsList.map(planttype => (
+          <div>
+            <p>{planttype.name}</p>
+            <p>{planttype.id}</p>
+          </div>
+        ))}
       </div>
     )
   }
