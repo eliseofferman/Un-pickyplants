@@ -1,6 +1,6 @@
 import React from "react"
 
-class PlantsList extends React.Component {
+class RecPlant extends React.Component {
   render() {
 
     return (
@@ -12,4 +12,4 @@ class PlantsList extends React.Component {
 
 }
 
-export default PlantsList
+export default RecPlant

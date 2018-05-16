@@ -1,6 +1,6 @@
 import React from "react"
 
-class Recomendation extends React.Component {
+class RecList extends React.Component {
   state = {
     plantsList: []
   }
@@ -14,9 +14,13 @@ class Recomendation extends React.Component {
   }
 
   render() {
+     const plants = this.state.plantsList.filter(plant => (
+     plant.sunAmount === this.props.sunOption
+  ))
 
     return (
       <div>
+
         <h3>Recomented plants</h3>
         {this.state.plantsList.map(planttype => (
           <div>
@@ -30,4 +34,4 @@ class Recomendation extends React.Component {
 
 }
 
-export default Recomendation
+export default RecList

@@ -1,8 +1,8 @@
 import React from "react"
 import Hero from "./hero"
 import Input from "./input"
-import Recomendation from "./recomendation"
-import PlantsList from "./plants-list"
+import RecList from "./rec-list"
+import RecPlant from "./rec-plant"
 import PlantItem from "./plant-item"
 
 
@@ -24,6 +24,7 @@ class App extends React.Component {
     this.setState({ inputSun: selectedSun })
   }
 
+
   render() {
     return (
       <div>
@@ -34,8 +35,9 @@ class App extends React.Component {
           // state={this.state}
           callbackSunSelector={this.updateInputSun}
           currentSun={this.state.inputSun} />
-        <Recomendation />
-        <PlantsList />
+        <RecList
+        sunOption={this.state.inputSun}/>
+        <RecPlant />
         <PlantItem />
       </div>
     )
