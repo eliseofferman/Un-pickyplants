@@ -16,6 +16,7 @@ class Input extends React.Component {
     ]
 
 
+class Input extends React.Component {
    // onChangeSun = (event) => {
    //   this.props.callbackStateSun(event.target.value)
    // }
@@ -24,47 +25,61 @@ class Input extends React.Component {
    //   this.props.callbackStateWater(event.target.value)
    // }
 
+  handleSunAmount = event => {
+    this.props.callbackSunSelector(event.target.value)
+  }
+
   render() {
-   return (
+    console.log("stete?", this.props.currentSun)
+    return (
       <div>
         <label>
+
           <h3>Choose sun amount </h3>
-             <select>
-            {sunAmount.map(option => (
+          <select onChange={this.handleSunAmount}>
+            {sunAmount.map(sunOption => (
               <option
-                selected={option === this.props.xxx}
-                key={option}
-                value={option}
+                selected={sunOption === this.props.currentSun}
+                key={sunOption}
+                value={sunOption}>
+                {sunOption}
               </option>
-                ))}
-            </select>
+            ))}
+          </select>
 
-          </label>
+          <h3>Choose how often you want to water</h3>
+          <select>
+            {waterAmount.map(waterOption => (
+              <option
+                selected={waterOption === this.props.currentWater}
+                key={waterOption}
+                value={waterOption}>
+                {waterOption}
+              </option>
+            ))}
+          </select>
 
-
-
+        </label>
 
 
 
         {/* <label onSubmit=>
           <form>
             <input type="text"
-             value= {this.props.state.inputSun}
+          value= {this.props.state.inputSun}
             onChange= {this.onChangeSun} />
             </form>
 
           <form>
-         <input type="text"
+          <input type="text"
            value= {this.props.state.inputWater}
            onChange= {this.onChangeWater} />
-         </form>
+          </form>
 
-       <button>
-         Find unpicky plant!
-       </button>
-
-
-      </label> */}
+          <button>
+          Find unpicky plant!
+          </button>
+        </label> */}
       </div>
     )
   }
