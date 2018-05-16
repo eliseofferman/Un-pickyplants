@@ -1,11 +1,39 @@
 import React from "react"
 
 class Input extends React.Component {
-  render() {
+  state = {
+    inputSun: " ",
+    inputWater: " "
+  }
+   onChangeSun = (event) => {
+     this.setState ({ inputSun: event.target.value })
+   }
 
-    return (
+   onChangeWater = (event) => {
+     this.setState ({ inputWater: event.target.value })
+   }
+
+  render() {
+   return (
       <div>
-        Hello Input
+        <label>
+          <form>
+            <input type="text"
+
+            value= {this.state.inputSun}
+            onChange= {this.onChangeSun} />
+            </form>
+
+         <form>
+         <input type="text"
+           value= {this.state.inputWater}
+           onChange= {this.onChangeWater} />
+         </form>
+
+
+
+
+      </label>
       </div>
     )
   }
