@@ -32,6 +32,10 @@ class Input extends React.Component {
     this.props.callbackSunSelector(event.target.value)
   }
 
+  handleWaterAmount = event =>{
+    this.props.callbackWaterSelector(event.target.value)
+  }
+
   render() {
     console.log("stete?", this.props.currentSun)
     return (
@@ -51,7 +55,7 @@ class Input extends React.Component {
           </select>
 
           <h3>Choose how often you want to water</h3>
-          <select>
+          <select onChange={this.handleWaterAmount}>
             {waterAmount.map(waterOption => (
               <option
                 selected={waterOption === this.props.currentWater}

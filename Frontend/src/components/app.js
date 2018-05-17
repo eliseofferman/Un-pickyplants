@@ -10,16 +10,17 @@ class App extends React.Component {
 
   state = {
     // inputSunx: "",
-    // inputWater: "",
-    inputSun: "test"
+    inputWater: "",
+    inputSun: ""
   }
   // updateStateSun = (event) => {
   //   this.setState ({ inputSun: event })
   // }
   //
-  // updateStateWater = (event) => {
-  //   this.setState ({ inputWater: event })
-  // }
+   updateInputWater = selectedWater => {
+   this.setState ({ inputWater: selectedWater })
+   }
+
   updateInputSun = selectedSun => {
     this.setState({ inputSun: selectedSun })
   }
@@ -33,8 +34,10 @@ class App extends React.Component {
           // callbackStateSun={this.updateStateSun}
           // callbackStateWater={this.updateStateWater}
           // state={this.state}
+          callbackWaterSelector={this.updateInputWater}
           callbackSunSelector={this.updateInputSun}
-          currentSun={this.state.inputSun} />
+          currentSun={this.state.inputSun}
+          currentWater={this.state.inputWater}/>
         <RecList
         sunOption={this.state.inputSun}/>
         <RecPlant />
