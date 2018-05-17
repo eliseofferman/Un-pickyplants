@@ -2,7 +2,6 @@ import React from "react"
 import Hero from "./hero"
 import Input from "./input"
 import RecList from "./rec-list"
-import RecPlant from "./rec-plant"
 import PlantItem from "./plant-item"
 
 
@@ -41,7 +40,7 @@ class App extends React.Component {
         <RecList
           sunOption={this.state.inputSun}
           waterOption={this.state.inputWater} />
-        <RecPlant />
+
         <PlantItem />
       </div>
     )
