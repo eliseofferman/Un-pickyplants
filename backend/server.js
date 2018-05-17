@@ -32,7 +32,8 @@ const Plant = mongoose.model("Plant", {
   // color: String,
   // maintainence: String,
   // nutrient: String,
-  // soil: String
+  // soil: String,
+  // sunPosition: String
 })
 
 app.get("/", (req, res) => {
