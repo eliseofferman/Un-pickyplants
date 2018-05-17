@@ -9,15 +9,18 @@ class RecList extends React.Component {
     fetch("http://localhost:8080/").then(response => (
       response.json()
     )).then(json => {
-      this.setState ({ plantsList: json })
+      this.setState({ plantsList: json })
     })
   }
 
   render() {
-     const plants = this.state.plantsList.filter((plant, index) => {
-       const x = plant.sunAmount.indexOf(this.props.sunOption)
-       return plant.sunAmount[x] === this.props.sunOption
-  })
+    const plants = this.state.plantsList.filter(plant => {
+      const indexSun = plant.sunAmount.indexOf(this.props.sunOption)
+      const indexWater = plant.waterAmount.indexOf(this.props.waterOption)
+      return plant.sunAmount[indexSun] === this.props.sunOption && plant.waterAmount[indexWater] === this.props.waterOption
+    })
+
+    console.log("testqqq", plants)
 
     return (
       <div>

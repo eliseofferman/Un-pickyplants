@@ -21,11 +21,11 @@ const Plant = mongoose.model("Plant", {
   name: String,
 
   sunAmount: [{
-   type: String
-   }],
-   waterAmount: [{
     type: String
-   }]
+  }],
+  waterAmount: [{
+    type: String
+  }]
 
   // description: String,
   // waterAmount: String,
@@ -50,5 +50,4 @@ app.post("/", (req, res) => {
 })
 
 app.listen(8080, () =>
-  console.log("Example app listening on port 8080!")
-)
+  console.log("Example app listening on port 8080!"))

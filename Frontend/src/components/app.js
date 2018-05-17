@@ -37,9 +37,10 @@ class App extends React.Component {
           callbackWaterSelector={this.updateInputWater}
           callbackSunSelector={this.updateInputSun}
           currentSun={this.state.inputSun}
-          currentWater={this.state.inputWater}/>
+          currentWater={this.state.inputWater} />
         <RecList
-        sunOption={this.state.inputSun}/>
+          sunOption={this.state.inputSun}
+          waterOption={this.state.inputWater} />
         <RecPlant />
         <PlantItem />
       </div>
