@@ -3,17 +3,17 @@ import React from "react"
 
 const sunAmount = [
   "",
-  "direct sunlight",
-  "partly shadow",
-  "shadow"
+  "Direct sunlight",
+  "Partly shadow",
+  "Shadow"
 ]
 
 const waterAmount = [
   "",
-  "once a week",
-  "twice a month",
-  "once a month",
-  "dried out between watering the plant"
+  "Once a week",
+  "Twice a month",
+  "Once a month",
+  "Dried out between watering the plant"
 ]
 
 
