@@ -43,7 +43,7 @@
 
   "soil": "Sandy soil",
 
-  "location": "Anywhere is fine, but to preserve it’s beautiful green color place it in a sunny place",
+  "location": "Anywhere is fine, but to preserve it’s beautiful green color place it in a sunny place"
 }
 
 {
@@ -61,7 +61,7 @@
 
   "sunAmount": ["Partly shadow"],
 
-  "maintainence": "Golden Pothos is easy to maintatin, but keep in mind the plant likes it’s soil moist. Golden Pothos its beautiful hanging green leafs fits it good ampel"
+  "maintainence": "Golden Pothos is easy to maintatin, but keep in mind the plant likes it’s soil moist. Golden Pothos its beautiful hanging green leafs fits it good ampel",
 
   "nutrient": "Add a small dose nutrient during spring and fall, and in winter time once a month",
 
@@ -72,8 +72,11 @@
 
 {
   "name": "ZZ plant",
+
   "id": "ZZ plant",
+
   "color": "Green",
+  
   "imageFileName": "zz-plant.jpg",
 
   "description": "This plant you can easily forget about, or put in the closet and it will survive!",
@@ -93,9 +96,13 @@
 
 {
   "name": "Kalankoe",
+
   "id": "Kalankoe",
+
   "color": "Different shades of pink, yellow, orange, red, white",
+
   "imageFileName": "kalankoe.jpg",
+
   "description": "Kalankoe is easy to maintatin. The plant tolerates to be dried out or stand in a dry air environment",
 
   "waterAmount": ["Once a week"],
@@ -119,7 +126,7 @@
   "color": "Green and purple leaves",
 
   "imageFileName": "zebra.jpg",
-  
+
   "description": "Zebra plant is easy to maintatin. With it's beautiful hanging green and purpel leafs, this plant fits it perfect in a ampel",
 
   "waterAmount": ["Once a week"],
