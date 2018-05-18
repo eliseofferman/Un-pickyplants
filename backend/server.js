@@ -19,21 +19,20 @@ mongoose.connection.once("open", () => console.log("Connection to mongodb"))
 const Plant = mongoose.model("Plant", {
   id: String,
   name: String,
-
+  imageFileName: String,
   sunAmount: [{
     type: String
   }],
   waterAmount: [{
     type: String
-  }]
+  }],
+  description: String,
+  color: String,
+  maintainence: String,
+  location: String,
+  nutrient: String,
+  soil: String
 
-  // description: String,
-  // waterAmount: String,
-  // color: String,
-  // maintainence: String,
-  // nutrient: String,
-  // soil: String,
-  // location: String
 })
 
 app.get("/", (req, res) => {

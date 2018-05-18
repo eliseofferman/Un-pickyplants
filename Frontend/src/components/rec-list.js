@@ -20,7 +20,6 @@ class RecList extends React.Component {
       const indexWater = plant.waterAmount.indexOf(this.props.waterOption)
          return plant.sunAmount[indexSun] === this.props.sunOption && plant.waterAmount[indexWater] === this.props.waterOption
     })
-   console.log("testqqq", plants)
 
     return (
       <div>
@@ -29,10 +28,6 @@ class RecList extends React.Component {
         {plants.map(plant => (
           <RecPlant
             plantinformation={plant} />
-
-
-
-
         ))}
       </div>
     )
