@@ -32,12 +32,11 @@ class Input extends React.Component {
     this.props.callbackSunSelector(event.target.value)
   }
 
-  handleWaterAmount = event =>{
+  handleWaterAmount = event => {
     this.props.callbackWaterSelector(event.target.value)
   }
 
   render() {
-    console.log("stete?", this.props.currentSun)
     return (
       <div>
         <label>
