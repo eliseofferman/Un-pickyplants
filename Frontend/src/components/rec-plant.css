@@ -1,13 +1,11 @@
-.main-box{
+.main-box {
   width: 100%;
   background: yellow;
   display: flex;
   flex-direction: row;
-  flex-flow: wrap;
-}
+  flex-flow: wrap; }
 
 .plant-box {
   width: 30%;
   height: auto;
-  border: 2px solid hotpink;
-}
+  border: 2px solid hotpink; }
