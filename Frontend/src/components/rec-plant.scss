@@ -1,13 +1,34 @@
-.main-box{
+.plant-box {
+  width: 100%;
+  height: 500px;
+  border: 2px solid hotpink;
+  position: relative;
+}
+
+.plant-box img {
+  width: 100%;
+  height: inherit;
+  object-fit: cover;
+}
+
+.test {
+  bottom: 60px;
+  left:0px;
+  position: absolute;
+}
+
+.main-box {
   width: 100%;
   background: yellow;
   display: flex;
-  flex-direction: row;
-  flex-flow: wrap;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 30px;
 }
 
-.plant-box {
-  width: 30%;
-  height: auto;
-  border: 2px solid hotpink;
+
+@media (min-width:800px) {
+  .plant-box{
+    width: 45%;
+  }
 }

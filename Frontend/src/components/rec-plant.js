@@ -6,10 +6,10 @@ import "./rec-plant.css"
 class RecPlant extends React.Component {
   render() {
     return (
-      <div className="main-box">
-        <div className="plant-box">
+      <div className="plant-box">
+        <img src={require(`../images/${this.props.plantinformation.imageFileName}`)}  alt="plant image" />
+        <div className="test">
           <h3>{this.props.plantinformation.name}</h3>
-          <img src={require(`../images/${this.props.plantinformation.imageFileName}`)}  alt="m" />
         </div>
       </div>
     )

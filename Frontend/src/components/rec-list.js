@@ -25,11 +25,13 @@ class RecList extends React.Component {
       <div>
 
         <h3>Recomented plants!</h3>
-        {plants.map((plant, index) => (
-          <RecPlant
-            key={index}
-            plantinformation={plant} />
-        ))}
+        <div className="main-box">
+          {plants.map((plant, index) => (
+            <RecPlant
+              key={index}
+              plantinformation={plant} />
+          ))}
+        </div>
       </div>
     )
   }

@@ -4,7 +4,7 @@ class PlantItem extends React.Component {
   render() {
 
     return (
-      <div>
+      <div className="hej">
         PlantItem
       </div>
     )
