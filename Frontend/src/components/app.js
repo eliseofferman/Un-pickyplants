@@ -49,9 +49,10 @@ class App extends React.Component {
                 sunOption={this.state.inputSun}
                 waterOption={this.state.inputWater}
                 {...routeProps} />
+
             )} />
 
-          <Route path="/un-pickyplants/:" component={PlantItem} />
+          <Route path="/plants/:plantsid" component={PlantItem} />
         </div>
       </HashRouter>
     )
