@@ -31,7 +31,6 @@ class RecList extends React.Component {
               <RecPlant
                 key={index}
                 plantinformation={plant} />
-
             ))}
           </div>
         </div>
