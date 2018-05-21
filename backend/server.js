@@ -49,5 +49,12 @@ app.post("/", (req, res) => {
     .catch(err => { res.status(400).send(err) })
 })
 
+app.get("/plants/:plantsId", (req, res) => {
+  Plant.findById(req.match.params.id).then(plant =>{
+    res.json(plant)
+  })
+})
+
+
 app.listen(8080, () =>
   console.log("Example app listening on port 8080!"))

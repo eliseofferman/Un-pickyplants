@@ -2,13 +2,24 @@ import React from "react"
 
 class PlantItem extends React.Component {
 
-  
-  render() {
+  state = {
+    plant: ""
+  }
+  componentDidMount() {
+    fetch("http://localhost:8080/plants/:plantsId").then(response => (
+      response.json()
+    )).then(json => {
+      this.setState({ plant: json })
+    })
+  }
 
+
+  render() {
+console.log("test", this.props)
+console.log("test1", this.state.plant )
     return (
       <div className="hej">
-        PlantItem
-        Hello
+        {/* {this.state.plant.name} */}
 
       </div>
     )

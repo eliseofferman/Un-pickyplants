@@ -52,7 +52,7 @@ class App extends React.Component {
 
             )} />
 
-          <Route path="/plants/:plantsid" component={PlantItem} />
+          <Route path="/plants/:plantId" component={PlantItem} />
         </div>
       </HashRouter>
     )
