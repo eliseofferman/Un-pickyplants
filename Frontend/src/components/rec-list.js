@@ -22,24 +22,25 @@ class RecList extends React.Component {
          return plant.sunAmount[indexSun] === this.props.sunOption && plant.waterAmount[indexWater] === this.props.waterOption
     })
 
-    return (
-      <div>
+    if (plants[0]) {
+      return (
+        <div>
+          <h3>Recomented plants!</h3>
+          <div className="main-box">
+            {plants.map((plant, index) => (
+              <RecPlant
+                key={index}
+                plantinformation={plant} />
 
-        <h3>Recomented plants!</h3>
-        <div className="main-box">
-          {plants.map((plant, index) => (
-
-            <RecPlant
-              key={index}
-              plantinformation={plant} />
-            // {/* <PlantItem
-            //   key={index}
-            // plantinformation={plant} /> */}
-
-          ))}
+            ))}
+          </div>
         </div>
-      </div>
-    )
+      )
+    } else {
+      return (
+        <div>No match</div>
+      )
+    }
   }
 
 }
