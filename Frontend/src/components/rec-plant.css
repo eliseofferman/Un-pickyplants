@@ -14,14 +14,6 @@
   left: 0px;
   position: absolute; }
 
-.main-box {
-  width: 100%;
-  background: yellow;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 30px; }
-
 @media (min-width: 800px) {
   .plant-box {
     width: 45%; } }

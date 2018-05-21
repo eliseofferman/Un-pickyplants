@@ -1,6 +1,8 @@
 import React from "react"
+import PlantItem from "./plant-item.css"
 
-class PlantItem extends React.Component {
+
+class Plant extends React.Component {
   state = {
     plant: null
   }
@@ -14,7 +16,7 @@ class PlantItem extends React.Component {
 
   render() {
     if(this.state.plant) {
-      
+
       return (
 
         <div className="plant-container">
@@ -41,4 +43,4 @@ class PlantItem extends React.Component {
   }
 }
 
-export default PlantItem
+export default Plant

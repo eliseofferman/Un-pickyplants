@@ -1,4 +1,27 @@
-.hej {
-  width: 30%;
-  height: 200px;
+.plant-container {
+  display: flex;
+  flex-direction: row;
+  flex-flow: nowrap;
+  width: 400%;
+  height: 800px;
   border: 2px solid hotpink; }
+
+.image-container {
+  width: 200%;
+  height: 200px;
+  display: flex; }
+
+.image-container img {
+  margin-left: 30px;
+  margin-top: 20px;
+  width: 180%;
+  height: 200px; }
+
+.info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; }
+
+@media (min-width: 800px) {
+  .plant-container {
+    width: 45%; } }
