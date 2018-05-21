@@ -1,4 +1,5 @@
 import React from "react"
+import { HashRouter, Route, Link } from "react-router-dom"
 import Hero from "./hero"
 import Input from "./input"
 import RecList from "./rec-list"
@@ -28,22 +29,31 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
-        <Hero />
-        <Input
-          // callbackStateSun={this.updateStateSun}
-          // callbackStateWater={this.updateStateWater}
-          // state={this.state}
-          callbackWaterSelector={this.updateInputWater}
-          callbackSunSelector={this.updateInputSun}
-          currentSun={this.state.inputSun}
-          currentWater={this.state.inputWater} />
-        <RecList
-          sunOption={this.state.inputSun}
-          waterOption={this.state.inputWater} />
+      <HashRouter >
+        <div>
+          <Route exact path="/" component={Hero} />
+          <Route
+            path="/un-pickyplants"
+            render={routeProps => (
+              <Input
+                callbackWaterSelector={this.updateInputWater}
+                callbackSunSelector={this.updateInputSun}
+                currentSun={this.state.inputSun}
+                currentWater={this.state.inputWater}
+                {...routeProps} />
+            )} />
+          <Route
+            path="/un-pickyplants"
+            render={routeProps => (
+              <RecList
+                sunOption={this.state.inputSun}
+                waterOption={this.state.inputWater}
+                {...routeProps} />
+            )} />
 
-        <PlantItem />
-      </div>
+          <Route path="/un-pickyplants/:" component={PlantItem} />
+        </div>
+      </HashRouter>
     )
   }
 
