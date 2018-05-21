@@ -6,6 +6,8 @@ class PlantItem extends React.Component {
     return (
       <div className="hej">
         PlantItem
+        Hello
+        {/* <h1>{this.props.plantinformation}</h1> */}
       </div>
     )
   }

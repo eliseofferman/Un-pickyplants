@@ -1,5 +1,6 @@
 import React from "react"
 import RecPlant from "./rec-plant"
+import PlantItem from "./plant-item"
 
 class RecList extends React.Component {
   state = {
@@ -27,9 +28,14 @@ class RecList extends React.Component {
         <h3>Recomented plants!</h3>
         <div className="main-box">
           {plants.map((plant, index) => (
+
             <RecPlant
               key={index}
               plantinformation={plant} />
+            // {/* <PlantItem
+            //   key={index}
+            // plantinformation={plant} /> */}
+
           ))}
         </div>
       </div>
