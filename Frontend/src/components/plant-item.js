@@ -18,7 +18,7 @@ class PlantItem extends React.Component {
 
 console.log("test1", this.state)
     return (
-      <div className="hej">
+      <div className="hej då">
         {this.state.plant.name}
 
       </div>
