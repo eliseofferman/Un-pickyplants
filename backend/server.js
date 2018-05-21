@@ -49,8 +49,8 @@ app.post("/", (req, res) => {
     .catch(err => { res.status(400).send(err) })
 })
 
-app.get("/plants/:plantsId", (req, res) => {
-  Plant.findById(req.match.params.id).then(plant =>{
+app.get("/plants/:plantId", (req, res) => {
+  Plant.findById(req.params.plantId).then(plant =>{
     res.json(plant)
   })
 })

@@ -6,7 +6,7 @@ class PlantItem extends React.Component {
     plant: ""
   }
   componentDidMount() {
-    fetch("http://localhost:8080/plants/:plantsId").then(response => (
+    fetch(`http://localhost:8080/plants/${this.props.match.params.plantId}`).then(response => (
       response.json()
     )).then(json => {
       this.setState({ plant: json })
@@ -15,11 +15,11 @@ class PlantItem extends React.Component {
 
 
   render() {
-console.log("test", this.props)
-console.log("test1", this.state.plant )
+
+console.log("test1", this.state)
     return (
       <div className="hej">
-        {/* {this.state.plant.name} */}
+        {this.state.plant.name}
 
       </div>
     )
