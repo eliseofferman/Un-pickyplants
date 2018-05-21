@@ -7,7 +7,7 @@ import "./rec-plant.css"
 class RecPlant extends React.Component {
   render() {
     return (
-      <Link to={`/plants/${this.props.plantinformation.id}`}>
+      <Link to={`/plants/${this.props.plantinformation._id}`}>
         <div className="plant-box">
 
           <img src={require(`../images/${this.props.plantinformation.imageFileName}`)}  alt="plant image" />
