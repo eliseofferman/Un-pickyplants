@@ -11,7 +11,7 @@ class RecPlant extends React.Component {
         <div className="plant-box">
 
           <img src={require(`../images/${this.props.plantinformation.imageFileName}`)}  alt="plant image" />
-          <div className="test">
+          <div className="plant-name">
             <h3>{this.props.plantinformation.name}</h3>
           </div>
 

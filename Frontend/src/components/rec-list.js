@@ -1,6 +1,7 @@
 import React from "react"
 import RecPlant from "./rec-plant"
 import PlantItem from "./plant-item"
+import "./rec-list.css"
 
 class RecList extends React.Component {
   state = {
