@@ -9,7 +9,6 @@
   object-fit: cover; }
 
 .hero-info {
-  margin-top: 20px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -19,7 +18,17 @@
   border: 2px solid #6d946d;
   border-radius: 8px;
   cursor: pointer;
-  width: 180px;
+  width: 145px;
   height: 60px;
-  padding: 8px;
-  margin-left: 176px; }
+  padding: 8px; }
+
+@media (min-width: 800px) {
+  .hero-info {
+    margin-top: 20px; }
+  .hero-info h1 {
+    font-size: 50px; }
+  .hero-info h4 {
+    font-size: 25px; }
+  .hero-button {
+    height: 60px;
+    width: 180px; } }
