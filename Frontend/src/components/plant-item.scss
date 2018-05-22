@@ -14,22 +14,8 @@
   width: 100%;
 }
 
-//
-// .info-container {
-//
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: flex-end;
-// }
-//
-// .info-container p h3 {
-//
-// }
 
 @media (min-width:800px) {
-  // .plant-container{
-  //   width: 45%;
-  // }
   .plant-container{
     display: flex;
     flex-wrap: wrap;
@@ -41,5 +27,6 @@
 
   .info-container{
     width: 50%;
+    padding: 30px;
   }
 }
