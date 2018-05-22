@@ -15,8 +15,7 @@ class Plant extends React.Component {
   }
 
   render() {
-    if(this.state.plant) {
-
+    if (this.state.plant) {
       return (
 
         <div className="plant-container">
@@ -36,7 +35,7 @@ class Plant extends React.Component {
         </div>
       )
     } else {
-      return(
+      return (
         <div>Loading..</div>
       )
     }

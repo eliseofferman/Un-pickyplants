@@ -1,27 +1,20 @@
 .plant-container {
-  display: flex;
-  flex-direction: row;
-  flex-flow: nowrap;
-  width: 400%;
-  height: 800px;
-  border: 2px solid hotpink; }
+  width: 100%;
+  padding: 30px; }
 
 .image-container {
-  width: 200%;
-  height: 200px;
-  display: flex; }
+  width: 100%;
+  height: auto;
+  margin: 0px; }
 
 .image-container img {
-  margin-left: 30px;
-  margin-top: 20px;
-  width: 180%;
-  height: 200px; }
-
-.info-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end; }
+  width: 100%; }
 
 @media (min-width: 800px) {
   .plant-container {
-    width: 45%; } }
+    display: flex;
+    flex-wrap: wrap; }
+  .image-container {
+    width: 50%; }
+  .info-container {
+    width: 50%; } }
