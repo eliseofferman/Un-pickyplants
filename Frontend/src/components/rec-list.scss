@@ -4,5 +4,16 @@
   // display: flex;
   // flex-wrap: wrap;
   // justify-content: space-between;
+
+  height: auto;
   padding: 30px;
+}
+
+@media (min-width:800px) {
+  .main-box{
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: space-between;
+  }
 }

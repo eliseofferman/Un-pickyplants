@@ -7,16 +7,16 @@ import "./rec-plant.css"
 class RecPlant extends React.Component {
   render() {
     return (
-      <Link to={`/plants/${this.props.plantinformation._id}`}>
-        <div className="plant-box">
 
-          <img src={require(`../images/${this.props.plantinformation.imageFileName}`)}  alt="plant image" />
-          <div className="plant-name">
-            <h3>{this.props.plantinformation.name}</h3>
+        <div className="plant-box">
+          <Link to={`/plants/${this.props.plantinformation._id}`}>
+            <img src={require(`../images/${this.props.plantinformation.imageFileName}`)}  alt="plant image" />
+            <div className="plant-name">
+              <h3>{this.props.plantinformation.name}</h3>
+            </div>
+          </Link>
           </div>
 
-        </div>
-      </Link>
 
     )
   }
