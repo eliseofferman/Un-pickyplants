@@ -1,3 +1,10 @@
 .main-box {
   width: 100%;
+  height: auto;
   padding: 30px; }
+
+@media (min-width: 800px) {
+  .main-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; } }
