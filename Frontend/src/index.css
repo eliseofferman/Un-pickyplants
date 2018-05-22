@@ -32,3 +32,7 @@ p {
   font-size: 16px;
   font-family: "Dosis", sans-serif;
   color: #7d7676; }
+
+a {
+  text-decoration: none;
+  cursor: pointer; }

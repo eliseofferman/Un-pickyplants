@@ -10,6 +10,12 @@
 .image-container img {
   width: 100%; }
 
+.breadCrumb {
+  margin-left: 30px; }
+
+.breadCrumb h3 {
+  display: inline-block; }
+
 @media (min-width: 800px) {
   .plant-container {
     display: flex;

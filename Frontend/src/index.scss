@@ -42,3 +42,8 @@ p {
   font-family: $font-family-text;
   color: $text-color;
 }
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}

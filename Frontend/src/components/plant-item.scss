@@ -14,6 +14,14 @@
   width: 100%;
 }
 
+.breadCrumb {
+  margin-left: 30px;
+  // cursor: pointer;
+}
+
+.breadCrumb h3 {
+  display: inline-block;
+}
 
 @media (min-width:800px) {
   .plant-container{
