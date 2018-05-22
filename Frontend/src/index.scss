@@ -12,8 +12,14 @@ body {
 }
 
 h3 {
-  color:$text-color;
+  color:$header-color;
   text-shadow:$text-shadow;
   font-family: $font-headers;
   font-size: $size-headers;
+}
+
+p {
+  font-size: $size-text;
+  font-family: $font-family-text;
+  color: $text-color;
 }
