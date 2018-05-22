@@ -1,7 +1,8 @@
 .hero-container {
   width: 100%;
   height: 100vh;
-  position: relative; }
+  position: relative;
+  text-align: center; }
 
 .hero-img {
   width: 100%;
@@ -9,10 +10,13 @@
   object-fit: cover; }
 
 .hero-info {
+  text-align: center;
   position: absolute;
-  top: 50%;
+  top: 25%;
+  padding: 30px;
   left: 50%;
-  transform: translate(-50%, -120%); }
+  transform: translate(-50%, -50%);
+  width: 100%; }
 
 .hero-button {
   border: 2px solid #6d946d;
