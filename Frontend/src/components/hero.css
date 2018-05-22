@@ -1,8 +1,7 @@
 .hero-container {
   width: 100%;
   height: 100vh;
-  position: relative;
-  text-align: center; }
+  position: relative; }
 
 .hero-img {
   width: 100%;
@@ -23,12 +22,11 @@
   border-radius: 8px;
   cursor: pointer;
   width: 145px;
-  height: 60px;
-  padding: 8px; }
+  height: 50px;
+  padding: 8px;
+  margin-top: 20px; }
 
 @media (min-width: 800px) {
-  .hero-info {
-    margin-top: 20px; }
   .hero-info h1 {
     font-size: 50px; }
   .hero-info h4 {
