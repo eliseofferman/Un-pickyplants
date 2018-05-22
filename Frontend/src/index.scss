@@ -11,11 +11,30 @@ body {
   background-color: $background-color;
 }
 
+h1 {
+   font-family: $font-headers;
+   color: $hero-color;
+   font-size: $size-hero;
+ }
+
 h3 {
   color:$header-color;
   text-shadow:$text-shadow;
   font-family: $font-headers;
   font-size: $size-headers;
+}
+
+.hero-button{
+  color: $hero-color;
+  font-family: $font-headers;
+  font-size: $size-text;
+
+}
+
+h4{
+font-family: $font-headers;
+ color: $hero-color;
+ font-size: $size-headers;
 }
 
 p {
