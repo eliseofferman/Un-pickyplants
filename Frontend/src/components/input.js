@@ -1,5 +1,5 @@
 import React from "react"
-
+import "./input.css"
 
 const sunAmount = [
   "",
@@ -38,7 +38,7 @@ class Input extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="input-content">
         <label>
 
           <h3>Choose sun amount </h3>
