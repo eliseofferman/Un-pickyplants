@@ -11,7 +11,7 @@ class Hero extends React.Component {
 
         <div className="hero-info">
           <h1>Welcome to Un-picky plants</h1>
-          <h4>For you who have killed far to many plants in your life</h4>
+          <h3>For you who have killed far to many plants in your life</h3>
           <Link to="/un-pickyplants">
             <button className="hero-button">View un-picky plants</button>
           </Link>

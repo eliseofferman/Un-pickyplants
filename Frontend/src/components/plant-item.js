@@ -15,23 +15,19 @@ class Plant extends React.Component {
     })
   }
 
-  // renderBreadCrumbs = () => {
-  //   const Ho
-  // }
-
   render() {
     if (this.state.plant) {
       return (
         <div>
           <Header />
           <div className="breadCrumb">
-            <Link to="/un-pickyplants"><h3>Main page</h3></Link>
+            <Link to="/un-pickyplants"><h5>Main page</h5></Link>
           </div>
           <div className="plant-container">
             <div className="image-container">
               <img src={require(`../images/${this.state.plant.imageFileName}`)}  alt="plant image" />
             </div>
-            
+
             <div className="info-container">
               <h3>{this.state.plant.name}</h3>
               <p>Color: {this.state.plant.color}</p>

@@ -27,10 +27,6 @@
   margin-top: 20px; }
 
 @media (min-width: 800px) {
-  .hero-info h1 {
-    font-size: 50px; }
-  .hero-info h4 {
-    font-size: 25px; }
   .hero-button {
     height: 60px;
     width: 180px; } }

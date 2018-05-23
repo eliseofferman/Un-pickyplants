@@ -16,19 +16,13 @@ h1 {
 h3 {
   color: #6d946d;
   font-family: "Bad Script", cursive;
-  font-size: 25px;
+  font-size: 20px;
   margin: 0px; }
 
 .hero-button {
   color: #6d946d;
   font-family: "Bad Script", cursive;
   font-size: 14px; }
-
-h4 {
-  font-family: "Bad Script", cursive;
-  color: #6d946d;
-  font-size: 20px;
-  margin: 0px; }
 
 p {
   font-size: 14px;
@@ -39,6 +33,17 @@ a {
   text-decoration: none;
   cursor: pointer; }
 
+h5 {
+  display: inline-block;
+  font-size: 14px;
+  color: #7d7676;
+  font-family: "Bad Script", cursive;
+  margin: 0px; }
+
 @media (min-width: 800px) {
-  p {
-    font-size: 16px; } }
+  p, h5 {
+    font-size: 16px; }
+  h1 {
+    font-size: 50px; }
+  h3 {
+    font-size: 25px; } }

@@ -14,12 +14,12 @@ body {
 h1 {
    font-family: $font-headers;
    color: $hero-color;
-   font-size: 30px;
+   font-size: $size-hero;
    margin: 0px;
  }
 
 h3 {
-  color:#6d946d;
+  color: $hero-color;
   // text-shadow:$text-shadow;
   font-family: $font-headers;
   font-size: $size-headers;
@@ -30,14 +30,6 @@ h3 {
   color: $hero-color;
   font-family: $font-headers;
   font-size: $size-text;
-
-}
-
-h4{
-font-family: $font-headers;
- color: $hero-color;
- font-size: 20px;
- margin: 0px;
 }
 
 p {
@@ -51,8 +43,23 @@ a {
   cursor: pointer;
 }
 
+h5 {
+  display: inline-block;
+  font-size: $size-text;
+  color: $text-color;
+  font-family: $font-headers;
+  margin: 0px;
+}
+
+
 @media (min-width:800px) {
-  p {
-    font-size: $size-text-dectop;
+  p, h5 {
+    font-size: $size-text-desctop;
+  }
+  h1 {
+    font-size: $size-hero-desctop;
+  }
+  h3 {
+    font-size: $size-headers-desctop;
   }
 }
