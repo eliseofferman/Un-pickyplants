@@ -1,20 +1,17 @@
+@import ".././themes/padding.scss";
+
 .main-box {
   width: 100%;
-  // background: yellow;
-  // display: flex;
-  // flex-wrap: wrap;
-  // justify-content: space-between;
-
   height: auto;
-  padding: 30px;
+  padding: $standard-padding;
 }
 
 .list-content {
-  margin-top: 30px;
+  margin-top: $standard-padding;
   text-align: center;
 }
 
-.no-match{
+.no-match {
   width: 100%;
   padding-top: 100px;
   text-align: center;

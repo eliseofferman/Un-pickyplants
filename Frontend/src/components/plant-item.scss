@@ -1,7 +1,8 @@
+@import ".././themes/padding.scss";
+
 .plant-container {
   width: 100%;
-  padding: 30px;
-
+  padding: $standard-padding;
 }
 
 .image-container {
@@ -15,8 +16,7 @@
 }
 
 .breadCrumb {
-  margin-left: 30px;
-  // cursor: pointer;
+  margin-left: $standard-padding;
 }
 
 .info-container h3{
@@ -42,6 +42,6 @@
 
   .info-container{
     width: 50%;
-    padding: 30px;
+    padding: $standard-padding;
   }
 }
