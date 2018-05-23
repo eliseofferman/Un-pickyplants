@@ -3,14 +3,14 @@ import Header from "./header"
 import "./input.css"
 
 const sunAmount = [
-  "",
+  "Select all",
   "Direct sunlight",
   "Partly shadow",
   "Shadow"
 ]
 
 const waterAmount = [
-  "",
+  "Select all",
   "Once a week",
   "Twice a month",
   "Once a month",
