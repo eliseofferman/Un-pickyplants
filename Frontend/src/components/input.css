@@ -1,19 +1,25 @@
 select {
   background: white;
-  color: blue;
-  width: 200px;
+  color: black;
+  width: 250px;
   font-family: monospace;
-  font-size: 20px;
-  height: 40px;
-  margin-bottom: 30px;
-  display: inline-block;
-  text-align: center; }
+  font-size: 12px;
+  height: 30px;
+  margin-bottom: 30px; }
 
 .input-content {
   width: 100%;
   padding: 30px;
-  background-color: pink;
-  margin-top: 50px;
   background-image: url(../images/input-monstera.jpg);
   background-size: cover;
   background-position: center; }
+
+@media (min-width: 800px) {
+  select {
+    width: 300px; }
+  .input-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 250px;
+    align-items: center; } }
