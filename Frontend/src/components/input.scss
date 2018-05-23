@@ -1,7 +1,9 @@
 select{
   background: white;
   color: blue;
-  // width: 400px;
+  width: 200px;
+  font-family: monospace;
+  font-size: 20px;
   height: 40px;
 }
 
@@ -12,7 +14,8 @@ select{
   background-color: pink;
   margin-top: 50px;
   background-image: url(../images/input-monstera.jpg);
-  background-size: contain;
+  background-size: cover;
+  background-position: center;
 }
 
 .input-content h3{
