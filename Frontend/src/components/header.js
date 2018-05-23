@@ -7,7 +7,7 @@ render() {
 
   return (
     <div className="header-logo">
-      <h1>Unpicky plants</h1>
+      <h1>Un-picky plants</h1>
     </div>
 
   )
