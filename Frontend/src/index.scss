@@ -50,3 +50,9 @@ a {
   text-decoration: none;
   cursor: pointer;
 }
+
+@media (min-width:800px) {
+  p {
+    font-size: $size-text-dectop;
+  }
+}

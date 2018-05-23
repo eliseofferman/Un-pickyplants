@@ -22,7 +22,7 @@ h3 {
 .hero-button {
   color: #6d946d;
   font-family: "Bad Script", cursive;
-  font-size: 16px; }
+  font-size: 14px; }
 
 h4 {
   font-family: "Bad Script", cursive;
@@ -31,10 +31,14 @@ h4 {
   margin: 0px; }
 
 p {
-  font-size: 16px;
+  font-size: 14px;
   font-family: "Dosis", sans-serif;
   color: #7d7676; }
 
 a {
   text-decoration: none;
   cursor: pointer; }
+
+@media (min-width: 800px) {
+  p {
+    font-size: 16px; } }
