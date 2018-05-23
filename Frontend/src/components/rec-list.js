@@ -36,6 +36,8 @@ class RecList extends React.Component {
           </div>
         </div>
       )
+    } else if (!plants[0]) {
+      return null
     } else {
       return (
         <div className="no-match"><h3>No match</h3></div>
