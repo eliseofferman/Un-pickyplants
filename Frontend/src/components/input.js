@@ -40,7 +40,7 @@ class Input extends React.Component {
   render() {
     return (
       <div className="input-content">
-        <Header />
+        {/* <Header /> */}
         <label>
 
           <h3>Choose sun amount </h3>
