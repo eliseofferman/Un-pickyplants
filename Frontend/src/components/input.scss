@@ -5,6 +5,9 @@ select{
   font-family: monospace;
   font-size: 20px;
   height: 40px;
+  margin-bottom: 30px;
+  display: inline-block;
+  text-align: center;
 }
 
 .input-content {
@@ -16,9 +19,9 @@ select{
   background-image: url(../images/input-monstera.jpg);
   background-size: cover;
   background-position: center;
-  text-align: center;
+  // text-align: center;
 }
 
-.input-content h3{
-  display: inline-block;
-}
+// .input-content h3{
+//   display: inline-block;
+// }

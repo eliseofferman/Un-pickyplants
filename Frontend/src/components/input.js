@@ -42,8 +42,6 @@ class Input extends React.Component {
     <div className="header-input">
       <Header />
       <div className="input-content">
-
-
         <label>
 
           <h3>Choose sun amount </h3>
