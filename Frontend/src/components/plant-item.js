@@ -46,7 +46,7 @@ class Plant extends React.Component {
       )
     } else {
       return (
-        <div>Loading..</div>
+        <h3>Loading..</h3>
       )
     }
   }
