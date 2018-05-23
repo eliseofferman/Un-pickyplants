@@ -6,7 +6,9 @@ class Header extends React.Component {
 render() {
 
   return (
-    <div>Hej</div>
+    <div className="header-logo">
+      <h1>Unpicky plants</h1>
+    </div>
 
   )
 }

@@ -1,4 +1,5 @@
 import React from "react"
+import Header from "./header"
 import { Link } from "react-router-dom"
 import PlantItem from "./plant-item.css"
 
@@ -22,6 +23,7 @@ class Plant extends React.Component {
     if (this.state.plant) {
       return (
         <div>
+          <Header />
           <div className="breadCrumb">
             <Link to="/un-pickyplants"><h3>Main page</h3></Link>
           </div>

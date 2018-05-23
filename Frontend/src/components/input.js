@@ -39,8 +39,11 @@ class Input extends React.Component {
 
   render() {
     return (
+    <div className="header-input">
+      <Header />
       <div className="input-content">
-        <Header />
+
+
         <label>
 
           <h3>Choose sun amount </h3>
@@ -70,6 +73,13 @@ class Input extends React.Component {
             ))}
           </select>
         </label>
+
+
+
+    </div>
+
+
+
 
 
 
