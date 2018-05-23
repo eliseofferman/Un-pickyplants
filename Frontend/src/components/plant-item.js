@@ -31,7 +31,7 @@ class Plant extends React.Component {
             <div className="image-container">
               <img src={require(`../images/${this.state.plant.imageFileName}`)}  alt="plant image" />
             </div>
-
+            
             <div className="info-container">
               <h3>{this.state.plant.name}</h3>
               <p>Color: {this.state.plant.color}</p>
