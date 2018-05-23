@@ -1,7 +1,9 @@
 select {
   background: white;
   color: blue;
-  height: 40px; }
+  height: 40px;
+font-family: fantasy;
+font-size: 20px;}
 
 .input-content {
   width: 100%;
