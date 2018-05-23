@@ -1,4 +1,5 @@
 import React from "react"
+import Header from "./header"
 import "./input.css"
 
 const sunAmount = [
@@ -39,6 +40,7 @@ class Input extends React.Component {
   render() {
     return (
       <div className="input-content">
+        <Header />
         <label>
 
           <h3>Choose sun amount </h3>
@@ -52,7 +54,10 @@ class Input extends React.Component {
               </option>
             ))}
           </select>
+        </label>
 
+
+        <label>
           <h3>Choose how often you want to water</h3>
           <select onChange={this.handleWaterAmount}>
             {waterAmount.map(waterOption => (
@@ -64,8 +69,9 @@ class Input extends React.Component {
               </option>
             ))}
           </select>
-
         </label>
+
+
 
 
 
