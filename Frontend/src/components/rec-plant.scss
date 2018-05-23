@@ -1,15 +1,14 @@
+@import ".././themes/padding.scss";
 .plant-box {
   width: 100%;
-  // height: 500px;
   height: auto;
   position: relative;
-  margin-bottom: 30px;
+  margin-bottom: $standard-padding;
 }
 
 .plant-box img {
   width: 100%;
   height: 300px;
-  // height: auto;
   object-fit: cover;
 }
 
