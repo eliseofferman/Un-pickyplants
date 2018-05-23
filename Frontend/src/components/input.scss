@@ -1,8 +1,10 @@
+@import "./themes/theme.scss";
+
 select{
   background: white;
   color: black;
   width: 250px;
-  font-family: monospace;
+  font-family: $font-family-text; 
   font-size: 12px;
   height: 30px;
   margin-bottom: 30px;
@@ -14,6 +16,10 @@ select{
   background-image: url(../images/input-monstera.jpg);
   background-size: cover;
   background-position: center;
+}
+
+.input-content h3 {
+  color:white;
 }
 
 @media (min-width:800px) {
