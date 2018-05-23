@@ -11,8 +11,8 @@ class App extends React.Component {
 
   state = {
     // inputSunx: "",
-    inputWater: "",
-    inputSun: ""
+    inputWater: "Select all",
+    inputSun: "Select all"
   }
   // updateStateSun = (event) => {
   //   this.setState ({ inputSun: event })
