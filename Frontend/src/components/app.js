@@ -1,11 +1,9 @@
 import React from "react"
-import { HashRouter, Route, Link } from "react-router-dom"
+import { HashRouter, Route } from "react-router-dom"
 import Hero from "./hero"
 import Input from "./input"
 import RecList from "./rec-list"
 import PlantItem from "./plant-item"
-
-
 
 class App extends React.Component {
 

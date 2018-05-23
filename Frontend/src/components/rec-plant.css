@@ -15,7 +15,8 @@
   position: absolute;
   background: #dfe9e5;
   width: 200px;
-  box-shadow: 5px 5px lightgray; }
+  box-shadow: 2px 2px gray;
+  border-radius: 0px 5px 5px 0px; }
 
 .plant-name h3 {
   margin: 10px 40px; }

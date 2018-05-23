@@ -1,4 +1,5 @@
 @import ".././themes/padding.scss";
+@import ".././themes/theme.scss";
 .plant-box {
   width: 100%;
   height: auto;
@@ -16,9 +17,10 @@
   bottom: 60px;
   left:0px;
   position: absolute;
-  background: #dfe9e5;
+  background: $background-color;
   width: 200px;
-  box-shadow: 5px 5px lightgray;
+  box-shadow: 2px 2px gray;
+  border-radius: 0px 5px 5px 0px;
 }
 
 .plant-name h3 {
