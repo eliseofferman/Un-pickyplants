@@ -25,8 +25,8 @@ class RecList extends React.Component {
 
     if (plants[0]) {
       return (
-        <div>
-          <h3>Recomented plants!</h3>
+        <div className="list-content">
+          <h3>Recommended plants!</h3>
           <div className="main-box">
             {plants.map((plant, index) => (
               <RecPlant
@@ -38,7 +38,7 @@ class RecList extends React.Component {
       )
     } else {
       return (
-        <div>No match</div>
+        <div className="no-match"><h3>No match</h3></div>
       )
     }
   }
