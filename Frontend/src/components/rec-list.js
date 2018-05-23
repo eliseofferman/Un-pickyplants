@@ -36,7 +36,7 @@ class RecList extends React.Component {
           </div>
         </div>
       )
-    } else if (!plants[0]) {
+    } else if (!this.plantsList[1]) {
       return null
     } else {
       return (
