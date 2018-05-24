@@ -8,7 +8,7 @@ class Plant extends React.Component {
     plant: null
   }
   componentDidMount() {
-    fetch(`https://un-pickyplants.herokuapp.com/${this.props.match.params.plantId}`).then(response => (
+    fetch(`https://un-pickyplants.herokuapp.com/plants/${this.props.match.params.plantId}`).then(response => (
       response.json()
     )).then(json => {
       this.setState({ plant: json })
