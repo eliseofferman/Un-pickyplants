@@ -9,7 +9,7 @@ class RecList extends React.Component {
   }
 
   componentDidMount() {
-    fetch("http://localhost:8080/").then(response => (
+    fetch("https://un-pickyplants.herokuapp.com/").then(response => (
       response.json()
     )).then(json => {
       this.setState({ plantsList: json })
