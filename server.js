@@ -9,7 +9,8 @@ app.use(bodyParser.json())
 
 app.use(cors())
 
-mongoose.connect("mongodb://localhost/green-thumb", { useMongoClient: true })
+const mongoUrl = process.env.MONGO_URL || "mongodb://localhost/green-thumb"
+mongoose.connect(mongoUrl, { useMongoClient: true })
 
 mongoose.Promise = Promise
 
@@ -55,6 +56,7 @@ app.get("/plants/:plantId", (req, res) => {
   })
 })
 
+const port = process.env.PORT || 8080
 
-app.listen(8080, () =>
+app.listen(port, () =>
   console.log("Example app listening on port 8080!"))
