@@ -1,5 +1,5 @@
-@import ".././themes/theme.scss";
-@import ".././themes/padding.scss";
+@import "../.././themes/theme.scss";
+@import "../.././themes/padding.scss";
 
 select{
   background: white;
@@ -14,7 +14,7 @@ select{
 .input-content {
   width: 100%;
   padding: $standard-padding;
-  background-image: url(../images/input-monstera.jpg);
+  background-image: url(../../images/input-monstera.jpg);
   background-size: cover;
   background-position: center;
 }

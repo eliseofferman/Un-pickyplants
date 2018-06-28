@@ -1,5 +1,5 @@
 import React from "react"
-import Header from "./header"
+import Header from "../header/header"
 import { Link } from "react-router-dom"
 import PlantItem from "./plant-item.css"
 
@@ -25,7 +25,7 @@ class Plant extends React.Component {
           </div>
           <div className="plant-container">
             <div className="image-container">
-              <img src={require(`../images/${this.state.plant.imageFileName}`)}  alt="plant image" />
+              <img src={require(`../../images/${this.state.plant.imageFileName}`)}  alt="plant image" />
             </div>
 
             <div className="info-container">

@@ -10,7 +10,7 @@ select {
 .input-content {
   width: 100%;
   padding: 30px;
-  background-image: url(../images/input-monstera.jpg);
+  background-image: url(../../images/input-monstera.jpg);
   background-size: cover;
   background-position: center; }
 

@@ -1,5 +1,5 @@
 import React from "react"
-import Header from "./header"
+import Header from "../header/header"
 import "./input.css"
 
 const sunAmount = [
