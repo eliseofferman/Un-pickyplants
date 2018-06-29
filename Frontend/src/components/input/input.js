@@ -71,8 +71,7 @@ class Input extends React.Component {
             ))}
           </select>
         </label>
-
-
+        
 
     </div>
 
