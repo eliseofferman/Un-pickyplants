@@ -23,7 +23,11 @@ class RecList extends React.Component {
          return plant.sunAmount[indexSun] === this.props.sunOption && plant.waterAmount[indexWater] === this.props.waterOption
     })
 
-    if (plants[0]) {
+    if (!this.state.plantsList) {
+      return (
+        <div className="no-match"><h3>Loading...</h3></div>
+      ) }
+    else if (plants[0]) {
       return (
         <div className="list-content">
           <h3>Recommended plants!</h3>
