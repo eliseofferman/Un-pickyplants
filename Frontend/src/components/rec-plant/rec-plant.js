@@ -13,7 +13,7 @@ class RecPlant extends React.Component {
               <h3>{this.props.plantinformation.name}</h3>
             </div>
           </Link>
-          </div>
+        </div>
 
 
     )

@@ -13,6 +13,9 @@
 .breadCrumb {
   margin-left: 30px; }
 
+b {
+  font-weight: 600; }
+
 @media (min-width: 800px) {
   .plant-container {
     display: flex;

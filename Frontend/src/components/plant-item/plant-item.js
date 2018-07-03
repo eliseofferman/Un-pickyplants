@@ -30,12 +30,14 @@ class Plant extends React.Component {
 
             <div className="info-container">
               <h3>{this.state.plant.name}</h3>
-              <p>Color: {this.state.plant.color}</p>
-              <p>Description: {this.state.plant.description}</p>
-              <p>Maintainence: {this.state.plant.maintainence}</p>
-              <p>Nutrient: {this.state.plant.nutrient}</p>
-              <p>Soil: {this.state.plant.soil}</p>
-              <p>Location: {this.state.plant.location}</p>
+
+              <p><b>Description:</b> {this.state.plant.description}</p>
+              <p><b>Maintainence:</b> {this.state.plant.maintainence}</p>
+              <p><b>Location:</b> {this.state.plant.location}</p>
+              <p><b>Nutrient:</b> {this.state.plant.nutrient}</p>
+              <p><b>Color:</b> {this.state.plant.color}</p>
+              <p><b>Soil:</b> {this.state.plant.soil}</p>
+
             </div>
           </div>
         </div>

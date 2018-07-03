@@ -9,6 +9,7 @@ body {
   padding: 0;
   font-family: sans-serif;
   background-color: $background-color;
+  letter-spacing: 0.2px;
 }
 
 h1 {
@@ -20,27 +21,9 @@ h1 {
 
 h3 {
   color: $hero-color;
-  // text-shadow:$text-shadow;
   font-family: $font-headers;
   font-size: $size-headers;
   margin: 0px;
-}
-
-.hero-button{
-  color: $hero-color;
-  font-family: $font-headers;
-  font-size: $size-text;
-}
-
-p {
-  font-size: $size-text;
-  font-family: $font-family-text;
-  color: $text-color;
-}
-
-a {
-  text-decoration: none;
-  cursor: pointer;
 }
 
 h5 {
@@ -49,6 +32,26 @@ h5 {
   color: $text-color;
   font-family: $font-headers;
   margin: 0px;
+}
+
+p {
+  font-size: $size-text;
+  font-family: $font-family-text;
+  color: $text-color;
+  line-height: 1.5;
+  font-weight: 300;
+
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.hero-button{
+  color: $hero-color;
+  font-family: $font-headers;
+  font-size: $size-text;
 }
 
 

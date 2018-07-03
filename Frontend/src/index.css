@@ -5,7 +5,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background-color: #dfe9e5; }
+  background-color: #dfe9e5;
+  letter-spacing: 0.2px; }
 
 h1 {
   font-family: "Bad Script", cursive;
@@ -19,26 +20,28 @@ h3 {
   font-size: 20px;
   margin: 0px; }
 
-.hero-button {
-  color: #6d946d;
+h5 {
+  display: inline-block;
+  font-size: 14px;
+  color: #555555;
   font-family: "Bad Script", cursive;
-  font-size: 14px; }
+  margin: 0px; }
 
 p {
   font-size: 14px;
   font-family: "Dosis", sans-serif;
-  color: #7d7676; }
+  color: #555555;
+  line-height: 1.5;
+  font-weight: 300; }
 
 a {
   text-decoration: none;
   cursor: pointer; }
 
-h5 {
-  display: inline-block;
-  font-size: 14px;
-  color: #7d7676;
+.hero-button {
+  color: #6d946d;
   font-family: "Bad Script", cursive;
-  margin: 0px; }
+  font-size: 14px; }
 
 @media (min-width: 800px) {
   p, h5 {
