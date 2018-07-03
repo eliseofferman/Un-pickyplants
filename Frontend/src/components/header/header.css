@@ -1,3 +1,6 @@
 .header-logo {
   margin: 14px 30px;
   margin-bottom: 10px; }
+
+.header-logo h1 {
+  font-size: 25px; }

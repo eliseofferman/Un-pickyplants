@@ -5,7 +5,8 @@ select {
   font-family: "Dosis", sans-serif;
   font-size: 14px;
   height: 30px;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  border: .0625rem solid #e6e4eb; }
 
 .input-content {
   width: 100%;
@@ -15,7 +16,9 @@ select {
   background-position: center; }
 
 .input-content h3 {
-  color: white; }
+  color: white;
+  font-family: "Dosis", sans-serif;
+  font-weight: 300; }
 
 @media (min-width: 800px) {
   select {

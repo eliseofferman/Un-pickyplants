@@ -13,15 +13,17 @@
 
 .image-container img {
   width: 100%;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.10);
 }
 
 .breadCrumb {
   margin-left: $standard-padding;
 }
 
-b {
-  font-weight: 600;
+.info-container {
+  padding-top: $standard-padding;
 }
+
 
 @media (min-width:800px) {
   .plant-container{
@@ -35,6 +37,6 @@ b {
 
   .info-container{
     width: 50%;
-    padding: $standard-padding;
+    padding: 0px $standard-padding;
   }
 }

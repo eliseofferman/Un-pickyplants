@@ -9,6 +9,7 @@ select{
   font-size: $size-text;
   height: 30px;
   margin-bottom: 30px;
+  border: .0625rem solid #e6e4eb;
 }
 
 .input-content {
@@ -21,6 +22,8 @@ select{
 
 .input-content h3 {
   color: white;
+  font-family: $font-family-text;
+  font-weight: 300;
 }
 
 @media (min-width:800px) {
