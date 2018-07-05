@@ -15,8 +15,8 @@
 }
 
 .plant-name {
-  bottom: 30px;
-  left:0px;
+  bottom: $standard-padding;
+  left: 0px;
   position: absolute;
   background: #dfe9e5eb;
   width: 70%;
@@ -25,10 +25,15 @@
 
 @media (min-width:800px) {
   .plant-box{
-    width: 22%;
+    width: 25%;
+    padding: 0px $standard-padding;;
   }
 
   .plant-box img {
     height: 250px;
+  }
+
+  .plant-name {
+    left: $standard-padding;
   }
 }

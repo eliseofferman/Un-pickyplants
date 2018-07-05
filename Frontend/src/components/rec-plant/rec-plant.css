@@ -20,6 +20,9 @@
 
 @media (min-width: 800px) {
   .plant-box {
-    width: 22%; }
+    width: 25%;
+    padding: 0px 30px; }
   .plant-box img {
-    height: 250px; } }
+    height: 250px; }
+  .plant-name {
+    left: 30px; } }
