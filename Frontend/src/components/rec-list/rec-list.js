@@ -38,6 +38,9 @@ class RecList extends React.Component {
                 plantinformation={plant} />
             ))}
           </div>
+          <div className="input-info">
+            <h3>Be careful with watering too much - mostly plants die of overwatering, not of being a bit to dry for some days</h3>
+          </div>
         </div>
       )
     } else {

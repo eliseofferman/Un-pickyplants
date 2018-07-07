@@ -26,6 +26,13 @@ select{
   font-weight: 300;
 }
 
+.input-info{
+  background: #fdfdd8;
+  padding: $standard-padding;
+  text-align: center;
+  // height: 300px;
+}
+
 @media (min-width:800px) {
   select {
     width: 300px;

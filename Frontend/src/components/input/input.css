@@ -20,6 +20,11 @@ select {
   font-family: "Dosis", sans-serif;
   font-weight: 300; }
 
+.input-info {
+  background: #fdfdd8;
+  padding: 30px;
+  text-align: center; }
+
 @media (min-width: 800px) {
   select {
     width: 300px; }

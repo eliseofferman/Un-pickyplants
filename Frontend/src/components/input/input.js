@@ -1,5 +1,5 @@
 import React from "react"
-import Header from "../header/header"
+// import Header from "../header/header"
 import "./input.css"
 
 const sunAmount = [
@@ -18,16 +18,7 @@ const waterAmount = [
 ]
 
 
-
-
 class Input extends React.Component {
-   // onChangeSun = (event) => {
-   //   this.props.callbackStateSun(event.target.value)
-   // }
-   //
-   // onChangeWater = (event) => {
-   //   this.props.callbackStateWater(event.target.value)
-   // }
 
   handleSunAmount = event => {
     this.props.callbackSunSelector(event.target.value)
@@ -40,26 +31,12 @@ class Input extends React.Component {
   render() {
     return (
     <div className="header-input">
-      <Header />
+      <div className="input-info">
+        <h3>Un-pickyplants helps you find indoor plants suitable for your home and interest for plant care</h3>
+      </div>
       <div className="input-content">
         <label>
-
-          <h3>Choose sun amount </h3>
-          <select onChange={this.handleSunAmount}>
-            {sunAmount.map(sunOption => (
-              <option
-                selected={sunOption === this.props.currentSun}
-                key={sunOption}
-                value={sunOption}>
-                {sunOption}
-              </option>
-            ))}
-          </select>
-        </label>
-
-
-        <label>
-          <h3>Choose how often you want to water</h3>
+          <h3>How often you want to water?</h3>
           <select onChange={this.handleWaterAmount}>
             {waterAmount.map(waterOption => (
               <option
@@ -71,35 +48,24 @@ class Input extends React.Component {
             ))}
           </select>
         </label>
-        
+
+        <label>
+          <h3>How much sun will the plant get?</h3>
+          <select onChange={this.handleSunAmount}>
+            {sunAmount.map(sunOption => (
+              <option
+                selected={sunOption === this.props.currentSun}
+                key={sunOption}
+                value={sunOption}>
+                {sunOption}
+              </option>
+            ))}
+          </select>
+        </label>
+      </div>
+
 
     </div>
-
-
-
-
-
-
-
-
-        {/* <label onSubmit=>
-          <form>
-            <input type="text"
-          value= {this.props.state.inputSun}
-            onChange= {this.onChangeSun} />
-            </form>
-
-          <form>
-          <input type="text"
-           value= {this.props.state.inputWater}
-           onChange= {this.onChangeWater} />
-          </form>
-
-          <button>
-          Find unpicky plant!
-          </button>
-        </label> */}
-      </div>
     )
   }
 

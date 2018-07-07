@@ -4,6 +4,7 @@ import Hero from "./hero/hero"
 import Input from "./input/input"
 import RecList from "./rec-list/rec-list"
 import PlantItem from "./plant-item/plant-item"
+import Header from "./header/header"
 
 class App extends React.Component {
 
@@ -29,7 +30,8 @@ class App extends React.Component {
     return (
       <HashRouter >
         <div>
-          <Route exact path="/" component={Hero} />
+          <Route exact path="/un-pickyplants" component={Header} />
+          <Route exact path="/un-pickyplants" component={Hero} />
           <Route
             path="/un-pickyplants"
             render={routeProps => (
